@@ -1,0 +1,408 @@
+cat > /home/claude/portfolio.html << 'HTMLEOF'
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sofia Abreu Coutinho · Cybersecurity & GRC</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">// sofia.sec</div>
+  <ul class="nav-links">
+    <li><a href="#sobre">sobre</a></li>
+    <li><a href="#valor">valor</a></li>
+    <li><a href="#certs">certificações</a></li>
+    <li><a href="#projetos">projetos</a></li>
+    <li><a href="#contato">contato</a></li>
+  </ul>
+</nav>
+<div id="scroll-bar"><div id="scroll-fill"></div></div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag">Cybersecurity & GRC · Blue Team · Brasil</div>
+  <div class="hero-stat-alert">
+    <strong>R$ 7,19 milhões.</strong> Esse é o custo médio de um vazamento de dados no Brasil em 2025 — e subindo 6,5% ao ano. A maioria desses incidentes tem uma causa em comum: o fator humano.
+  </div>
+  <h1>
+    Olá, sou <span class="name">Sofia Abreu Coutinho</span>
+    <span class="role">Analista em formação · Cybersecurity & GRC</span>
+  </h1>
+  <p class="hero-sub">Estudo para ser a profissional que identifica vulnerabilidades antes que virem incidentes — combinando base técnica em redes e suporte com conhecimento aprofundado em LGPD, Gestão de Riscos e Compliance.</p>
+  <div class="hero-ctas">
+    <a href="#contato" class="btn-primary">Entre em contato</a>
+    <a href="#projetos" class="btn-outline">Ver projetos</a>
+  </div>
+  <div class="terminal">
+    <div class="terminal-bar">
+      <div class="terminal-dot t-red"></div>
+      <div class="terminal-dot t-yellow"></div>
+      <div class="terminal-dot t-green"></div>
+    </div>
+    <div class="terminal-line"><span class="prompt">sofia@sec:~$ </span><span class="cmd">whoami</span></div>
+    <div class="terminal-line"><span class="output">→ </span><span class="highlight">Estudante de Gestão de TI · Foco em Cybersec & GRC</span></div>
+    <div class="terminal-line"><span class="prompt">sofia@sec:~$ </span><span class="cmd">cat missao.txt</span></div>
+    <div class="terminal-line"><span class="output">→ </span><span id="typed-text"></span><span class="cursor"></span></div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- PROBLEMA -->
+<section id="problema">
+  <div class="section-tag fade-up">o problema</div>
+  <h2 class="fade-up">Por que empresas perdem milhões?</h2>
+  <p class="section-sub fade-up">83% das violações de dados envolvem fator humano. Tecnologia protege sistemas — mas quem protege as pessoas e os processos?</p>
+
+  <div class="stats-row fade-up">
+    <div class="stat-box">
+      <div class="stat-val red" data-target="7.19" data-prefix="R$ " data-suffix=" mi">R$ 0</div>
+      <div class="stat-label">Custo médio por vazamento no Brasil</div>
+      <div class="stat-source">IBM Security · 2025</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-val amber" data-target="50" data-prefix="R$ " data-suffix=" mi">R$ 0</div>
+      <div class="stat-label">Multa máxima por infração LGPD</div>
+      <div class="stat-source">Lei nº 13.709/2018 · ANPD</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-val" data-target="800" data-suffix="k">0</div>
+      <div class="stat-label">Profissionais de TI em falta no Brasil</div>
+      <div class="stat-source">Brasscom · 2023–2027</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-val green" data-target="44" data-suffix="%">0%</div>
+      <div class="stat-label">Empresas ampliando equipes de TI em 2026</div>
+      <div class="stat-source">Robert Half · Guia Salarial 2026</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-val" data-target="19" data-suffix=" proc.">0</div>
+      <div class="stat-label">Processos sancionadores abertos pela ANPD em jun/26</div>
+      <div class="stat-source">ANPD · Lei nº 15.352/2026</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-val green" data-target="72" data-suffix="h">0h</div>
+      <div class="stat-label">Prazo para notificar a ANPD após incidente</div>
+      <div class="stat-source">LGPD · Art. 48</div>
+    </div>
+  </div>
+
+  <div class="problem-grid fade-up">
+    <div class="problem-card p1">
+      <div class="problem-icon">🎭</div>
+      <div class="problem-title">Engenharia Social & Vishing</div>
+      <div class="problem-desc">Atacantes exploram confiança, urgência e autoridade percebida para contornar o senso crítico humano — sem precisar derrubar nenhum firewall.</div>
+      <span class="problem-stat">83% das violações · fator humano</span>
+    </div>
+    <div class="problem-card p2">
+      <div class="problem-icon">⚖️</div>
+      <div class="problem-title">Não Conformidade com LGPD</div>
+      <div class="problem-desc">A ANPD virou agência reguladora em 2026 e intensificou fiscalizações. Empresas sem adequação enfrentam multas, suspensão e exposição pública.</div>
+      <span class="problem-stat">R$ 50 milhões por infração</span>
+    </div>
+    <div class="problem-card p3">
+      <div class="problem-icon">🔓</div>
+      <div class="problem-title">Ausência de Gestão de Riscos</div>
+      <div class="problem-desc">Sem mapeamento de dados, controle de acessos e planos de resposta a incidentes, empresas só descobrem vulnerabilidades quando já foram exploradas.</div>
+      <span class="problem-stat">72h para notificar · LGPD Art. 48</span>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="section-tag fade-up">sobre mim</div>
+  <h2 class="fade-up">Quem eu sou e por que escolhi essa área</h2>
+  <div class="sobre-grid fade-up">
+    <div class="sobre-text">
+      <p>Sou <strong>Sofia Abreu Coutinho</strong>, tenho 18 anos e curso <strong>Gestão da Tecnologia da Informação</strong> na Estácio, com foco em Cybersegurança e GRC.</p>
+      <p>Atuo como <strong>Atendimento Técnico na Giga+ Fibra</strong>, onde realizo diagnóstico de falhas de conectividade, gestão de chamados com SLA e suporte multicanal — experiência que me deu uma visão prática do que acontece quando sistemas falham e dados ficam vulneráveis.</p>
+      <p>Foi exatamente essa vivência que me aproximou da Segurança da Informação: percebi que a maioria dos incidentes começa não em sistemas, mas em <strong>processos e comportamentos humanos</strong> — e é aí que quero atuar.</p>
+      <p>Meu objetivo é construir carreira como <strong>Analista de Cybersegurança e GRC</strong>, ajudando empresas a proteger dados, estar em conformidade e responder a incidentes antes que virem crises.</p>
+    </div>
+    <div class="sobre-cards">
+      <div class="sobre-card">
+        <div class="sobre-card-icon">🎓</div>
+        <div>
+          <div class="sobre-card-title">Gestão da Tecnologia da Informação</div>
+          <div class="sobre-card-sub">Estácio · Juiz de Fora, MG · 2025–2027 · Foco: Cybersegurança</div>
+        </div>
+      </div>
+      <div class="sobre-card">
+        <div class="sobre-card-icon">💼</div>
+        <div>
+          <div class="sobre-card-title">Atendimento Técnico · Giga+ Fibra</div>
+          <div class="sobre-card-sub">Suporte N1 · Gestão de chamados · SLA · Diagnóstico de redes · Mai/2025–Atual</div>
+        </div>
+      </div>
+      <div class="sobre-card">
+        <div class="sobre-card-icon">🔐</div>
+        <div>
+          <div class="sobre-card-title">Cybersegurança & GRC</div>
+          <div class="sobre-card-sub">LGPD · ISO 27001 · Gestão de Riscos · Segurança da Informação · Blue Team</div>
+        </div>
+      </div>
+      <div class="sobre-card">
+        <div class="sobre-card-icon">📍</div>
+        <div>
+          <div class="sobre-card-title">Juiz de Fora, MG · Brasil</div>
+          <div class="sobre-card-sub">Disponível para remoto · Aberta a oportunidades CLT</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- VALOR -->
+<section id="valor">
+  <div class="section-tag fade-up">como agrego valor</div>
+  <h2 class="fade-up">O que posso fazer pela sua empresa</h2>
+  <p class="section-sub fade-up">Não listo habilidades — mostro o que faço com elas na prática.</p>
+  <div class="valor-grid fade-up">
+    <div class="valor-card">
+      <div class="valor-num">01 · IDENTIFICAÇÃO</div>
+      <div class="valor-title">Identifico vulnerabilidades antes que virem incidentes</div>
+      <div class="valor-desc">Análise de vulnerabilidades, OSINT, identificação de vetores de ataque e ameaças cibernéticas com base em frameworks como NIST e MITRE ATT&CK.</div>
+    </div>
+    <div class="valor-card">
+      <div class="valor-num">02 · CONFORMIDADE</div>
+      <div class="valor-title">Auxilio na adequação à LGPD e normas ISO</div>
+      <div class="valor-desc">Mapeamento de dados pessoais, elaboração de políticas de privacidade, checklists de adequação e documentação de processos de segurança para conformidade regulatória.</div>
+    </div>
+    <div class="valor-card">
+      <div class="valor-num">03 · RESPOSTA</div>
+      <div class="valor-title">Estruturo respostas a incidentes de segurança</div>
+      <div class="valor-desc">Planos de resposta baseados em frameworks reais (NIST SP 800-61), documentação de incidentes, notificação à ANPD dentro do prazo legal de 72h e análise pós-incidente.</div>
+    </div>
+    <div class="valor-card">
+      <div class="valor-num">04 · CONSCIÊNCIA</div>
+      <div class="valor-title">Reduzo o elo mais fraco: o fator humano</div>
+      <div class="valor-desc">Conscientização sobre engenharia social, phishing, vishing e boas práticas de segurança — porque 83% das violações começa com comportamento humano, não com falha técnica.</div>
+    </div>
+    <div class="valor-card">
+      <div class="valor-num">05 · SUPORTE</div>
+      <div class="valor-title">Experiência real em suporte técnico e gestão de chamados</div>
+      <div class="valor-desc">1 ano de atendimento técnico com SLA, diagnóstico de falhas de conectividade, documentação de chamados e comunicação técnica clara para usuários finais.</div>
+    </div>
+    <div class="valor-card">
+      <div class="valor-num">06 · DOCUMENTAÇÃO</div>
+      <div class="valor-title">Crio documentação técnica que outras pessoas conseguem usar</div>
+      <div class="valor-desc">Guias práticos de LGPD, checklists de adequação e incidentes, templates de política de privacidade e bases de conhecimento — ativos que ficam na empresa.</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CERTS -->
+<section id="certs">
+  <div class="section-tag fade-up">certificações & estudos</div>
+  <h2 class="fade-up">O que já aprendi e onde estou indo</h2>
+  <p class="section-sub fade-up">Cada certificação representa não só um conteúdo aprendido, mas uma competência aplicável ao negócio.</p>
+
+  <div class="certs-grid fade-up">
+    <div class="cert-card">
+      <div class="cert-header">
+        <span class="cert-inst">SENAI · ago/2026</span>
+        <span class="cert-badge">✓ Verificado</span>
+      </div>
+      <div class="cert-body">
+        <div class="cert-name">Por dentro da Segurança Cibernética</div>
+        <div class="cert-context">Identificação de ameaças cibernéticas, técnicas de coleta de informação e prevenção cibernética — base fundamental do Blue Team e do trabalho de análise de incidentes.</div>
+        <a href="https://www.sp.senai.br/consulta-certificado?qrcode=00038491/8515933" class="cert-link" target="_blank">→ verificar certificado</a>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-header">
+        <span class="cert-inst">PUCRS · ago/2026</span>
+        <span class="cert-badge">✓ Verificado</span>
+      </div>
+      <div class="cert-body">
+        <div class="cert-name">Compliance e Proteção de Dados</div>
+        <div class="cert-context">LGPD, Gestão de Riscos, Normas ISO, Segurança da Informação, Auditoria e Governança — o core do trabalho de GRC que o mercado mais demanda em 2026.</div>
+        <a href="https://educon.pucrs.br/validarcertificado" class="cert-link" target="_blank">→ verificar certificado · cód: 237810-4393-1</a>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-header">
+        <span class="cert-inst">Estácio · 2025–2027</span>
+        <span class="cert-badge" style="background:rgba(59,130,246,0.1);color:#60a5fa;border-color:rgba(59,130,246,0.2);">Em curso</span>
+      </div>
+      <div class="cert-body">
+        <div class="cert-name">Tecnólogo em Gestão da TI</div>
+        <div class="cert-context">Cybersegurança, infraestrutura de redes, suporte técnico, segurança da informação e gestão de processos de TI — formação superior em andamento.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="roadmap-title fade-up">// roadmap · próximas certificações</div>
+  <div class="roadmap-grid fade-up">
+    <span class="roadmap-pill next">SENAI · LGPD (em curso)</span>
+    <span class="roadmap-pill next">FIAP · Cybersecurity (em curso)</span>
+    <span class="roadmap-pill next">HarvardX · CS50 Cybersecurity (em curso)</span>
+    <span class="roadmap-pill">CompTIA Security+ SY0-701</span>
+    <span class="roadmap-pill">ISO 27001 Foundation</span>
+    <span class="roadmap-pill">CEH · Certified Ethical Hacker</span>
+    <span class="roadmap-pill">eJPT · eLearnSecurity</span>
+    <span class="roadmap-pill">AWS Security Specialty</span>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- PROJETOS -->
+<section id="projetos">
+  <div class="section-tag fade-up">projetos</div>
+  <h2 class="fade-up">O que já construí</h2>
+  <p class="section-sub fade-up">Projetos reais que mostram como penso e o que produzo — não apenas o que sei.</p>
+
+  <div class="proj-grid fade-up">
+    <div class="proj-card">
+      <div class="proj-top">
+        <div class="proj-tags"><span class="proj-tag tag-lgpd">LGPD</span><span class="proj-tag tag-grc">GRC</span></div>
+        <div class="proj-name">Guia Prático de LGPD</div>
+        <div class="proj-desc">Repositório completo com conceitos fundamentais, bases legais, direitos dos titulares, checklist de adequação, plano de resposta a incidentes e template de política de privacidade.</div>
+      </div>
+      <div class="proj-bottom">
+        <div class="proj-impact">Empresas sem conformidade LGPD enfrentam multas de até R$ 50 milhões e danos de reputação. Este guia facilita a adequação com documentação prática e verificável.</div>
+        <a href="https://github.com/Coutinhosofia/guia-lgpd-pratico" class="proj-link" target="_blank">→ ver no GitHub</a>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-top">
+        <div class="proj-tags"><span class="proj-tag tag-cyber">Cybersec</span><span class="proj-tag tag-web">Web</span></div>
+        <div class="proj-name">Cybersec Study Tracker</div>
+        <div class="proj-desc">Site desenvolvido do zero para acompanhar 18 semanas de estudo em Cybersegurança Blue Team — com tracker de progresso, busca por tópicos e recursos por semana.</div>
+      </div>
+      <div class="proj-bottom">
+        <div class="proj-impact">Demonstra capacidade técnica em HTML, CSS e JavaScript, além de organização estruturada de conhecimento em segurança da informação.</div>
+        <a href="https://coutinhosofia.github.io/meu_site_cronograma/" class="proj-link" target="_blank">→ acessar site</a>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-top">
+        <div class="proj-tags"><span class="proj-tag tag-grc">GRC</span><span class="proj-tag tag-lgpd">Incidentes</span></div>
+        <div class="proj-name">Checklist de Resposta a Incidentes</div>
+        <div class="proj-desc">Checklist estruturado baseado em frameworks reais (NIST SP 800-61) para resposta a vazamentos de dados — da contenção inicial à notificação da ANPD em 72h.</div>
+      </div>
+      <div class="proj-bottom">
+        <div class="proj-impact">Organizações sem plano de resposta demoram em média 277 dias para identificar e conter um incidente. Com processos definidos, esse tempo cai drasticamente.</div>
+        <a href="https://github.com/Coutinhosofia/guia-lgpd-pratico/blob/main/checklists/checklist-incidente.md" class="proj-link" target="_blank">→ ver checklist</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- VISHING -->
+<section id="vishing">
+  <div class="section-tag fade-up">caso real · análise técnica</div>
+  <h2 class="fade-up">Vishing: quando a vulnerabilidade está na confiança</h2>
+  <p class="section-sub fade-up">Um caso real que analisei e que ilustra por que a segurança da informação vai muito além de firewalls e antivírus.</p>
+
+  <div class="vishing-box fade-up">
+    <div class="vishing-header">
+      <span class="vishing-badge">CASO REAL · ANÔNIMO</span>
+      <div class="vishing-title">Ataque de Vishing em Contexto de Suporte Técnico</div>
+    </div>
+    <div class="vishing-body">
+      <div>
+        <div class="vishing-col-title">// o que aconteceu</div>
+        <div class="vishing-text">
+          Um cliente ficou sem internet e ligou para o número oficial da operadora — recebeu informação sobre instabilidade e encerrou a ligação. Parecia tudo normal, até o telefone tocar novamente.<br><br>
+          Do outro lado, um suposto técnico da mesma empresa, pronto para realizar uma "manutenção remota". Bastou instalar um aplicativo no celular. Minutos depois, o acesso bancário estava comprometido e o prejuízo financeiro era real.<br><br>
+          <strong style="color:#f87171">Nenhum firewall foi derrubado. Nenhuma senha foi quebrada.</strong>
+        </div>
+      </div>
+      <div>
+        <div class="vishing-col-title">// análise técnica</div>
+        <div class="vishing-point">Vetor de ataque exclusivamente humano — engenharia social por voz (Vishing)</div>
+        <div class="vishing-point">Exploração de gatilhos: urgência, autoridade percebida e contexto legítimo</div>
+        <div class="vishing-point">Uso de evento real (queda do serviço) para construir credibilidade</div>
+        <div class="vishing-point">Aplicativo de acesso remoto disfarçado de ferramenta legítima</div>
+        <div class="vishing-col-title" style="margin-top:1rem;">// como prevenir</div>
+        <div class="vishing-point">Comunicação institucional clara sobre o que jamais será solicitado</div>
+        <div class="vishing-point">Treinamento de equipes para identificar e orientar sobre fraudes</div>
+        <div class="vishing-point">Monitoramento ativo de padrões de ataque usando o nome da empresa</div>
+        <div class="vishing-point">Tratar segurança como critério estratégico, não só conformidade</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- HABILIDADES -->
+<section id="skills">
+  <div class="section-tag fade-up">habilidades técnicas</div>
+  <h2 class="fade-up">Stack & conhecimentos</h2>
+  <div class="skills-grid fade-up">
+    <div class="skill-group">
+      <div class="skill-group-name">Suporte & Atendimento</div>
+      <div class="skill-item">Suporte técnico N1</div>
+      <div class="skill-item">Gestão de chamados (SLA)</div>
+      <div class="skill-item">Atendimento multicanal</div>
+      <div class="skill-item">Acesso remoto</div>
+      <div class="skill-item">Help desk · Documentação</div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Redes & Infraestrutura</div>
+      <div class="skill-item">TCP/IP · DNS · DHCP</div>
+      <div class="skill-item">Linux · Windows</div>
+      <div class="skill-item">Wireshark (análise de rede)</div>
+      <div class="skill-item">Roteadores · Fibra óptica</div>
+      <div class="skill-item">Monitoramento de ambientes</div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Segurança & GRC</div>
+      <div class="skill-item">LGPD · Compliance</div>
+      <div class="skill-item">Gestão de Riscos · GRC</div>
+      <div class="skill-item">Normas ISO (básico)</div>
+      <div class="skill-item">Identificação de ameaças</div>
+      <div class="skill-item">Prevenção cibernética</div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Ferramentas & Dev</div>
+      <div class="skill-item">Python (básico)</div>
+      <div class="skill-item">SQL · NoSQL (básico)</div>
+      <div class="skill-item">Git · GitHub</div>
+      <div class="skill-item">HTML · CSS · JavaScript</div>
+      <div class="skill-item">Pacote Office · Excel</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="contato-box fade-up">
+    <div class="section-tag" style="justify-content:center;">contato</div>
+    <h3>Sua empresa está preparada para um incidente de segurança?</h3>
+    <p>Se você busca uma profissional em formação comprometida com Cybersegurança e GRC — com base técnica real, certificações verificáveis e projetos práticos — vamos conversar.</p>
+    <div class="contato-links">
+      <a href="https://www.linkedin.com/in/sofia-abreu-coutinho-20747b307" class="contato-link" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/Coutinhosofia" class="contato-link" target="_blank">🐙 GitHub</a>
+      <a href="mailto:coutinhosofiamd@gmail.com" class="contato-link">✉️ E-mail</a>
+    </div>
+    <div class="contato-cta">
+      <strong>(32) 99964-1951</strong> · Juiz de Fora, MG · Disponível para remoto
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>// sofia abreu coutinho</span> · cybersecurity & grc · 2026
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
