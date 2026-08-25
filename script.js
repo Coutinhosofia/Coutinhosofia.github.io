@@ -7,7 +7,7 @@ function updateScrollBar(){
 }
 document.addEventListener('scroll', updateScrollBar, { passive:true });
 updateScrollBar();
- 
+
 // ===== Mobile nav toggle =====
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
@@ -23,7 +23,7 @@ if(navToggle && navLinks){
     });
   });
 }
- 
+
 // ===== Reveal on scroll =====
 const revealEls = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver((entries) => {
@@ -35,7 +35,7 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold:0.15 });
 revealEls.forEach(el => revealObserver.observe(el));
- 
+
 // ===== Animated stat counters =====
 const statEls = document.querySelectorAll('.stat-val');
 const statObserver = new IntersectionObserver((entries) => {
@@ -48,7 +48,7 @@ const statObserver = new IntersectionObserver((entries) => {
     const decimals = parseInt(el.dataset.decimals || '0', 10);
     const duration = 1200;
     const start = performance.now();
- 
+
     function tick(now){
       const progress = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
@@ -62,7 +62,7 @@ const statObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold:0.4 });
 statEls.forEach(el => statObserver.observe(el));
- 
+
 // ===== Footer year + badge date =====
 const yearEl = document.getElementById('year');
 if(yearEl) yearEl.textContent = new Date().getFullYear();
