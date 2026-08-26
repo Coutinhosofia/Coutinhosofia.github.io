@@ -67,4 +67,8 @@ statEls.forEach(el => statObserver.observe(el));
 const yearEl = document.getElementById('year');
 if(yearEl) yearEl.textContent = new Date().getFullYear();
 const badgeDate = document.getElementById('badgeDate');
+<<<<<<< HEAD
 if(badgeDate) badgeDate.textContent = new Date().getFullYear();
+=======
+if(badgeDate) badgeDate.textContent = new Date().getFullYear();
+>>>>>>> baba68d (Atualiza portfólio)
